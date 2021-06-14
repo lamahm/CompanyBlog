@@ -1,0 +1,32 @@
+.about-us {
+    text-align: center;
+    border: 1px solid rgb(218, 218, 218); 
+    border-radius: 20px; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    overflow: hidden
+}
+
+.about-us h3 {
+    margin-bottom: 40px
+}
+
+.about-us .section {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top
+}
+
+.about-us .section:first-of-type {
+    text-align: justify;
+}
+
+.about-us .feat {
+    width: 35%;
+    display: inline-block;
+    height: 100px;
+    line-height: 120px;
+    margin: 4px;
+    background-color: #dac9bf;
+    border-radius: 20px;
+}

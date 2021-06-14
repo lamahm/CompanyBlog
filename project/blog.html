@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Company Blog</title>
+        <meta charset="UTF-8">
+        <meta charset="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="file:///C:/Users/Lamah/Downloads/fontawesome-free-5.15.1-web/css/all.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/blog.css">
+        <script src="https://kit.fontawesome.com/47907b54f2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="slider">
+                <div class="container">
+                    <div class="intro">
+                        <h2>Technology &amp; Media Company</h2>
+                        <div class="form">
+                            <form class="form-inline">
+                                <input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search">
+                                <button type="submit" class="btn btn-light my-sm-0"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="container">
+                    <h2><i class="fas fa-cubes"></i> HiTech</h2>
+                    <ul class="nav nav-pills">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="blog-box">
+                <h3>Technology in Our Life</h3>
+                <p>
+                    Change is never easy. As we age, some of the decisions we have to make are deeply personal and force us to have to make concessions where we don’t necessarily want to. For many, choosing to incorporate a mobility chair into everyday life can be difficult, because it feels like independence is slowly slipping away.
+                </p>
+                <div class="image"><img src="img/blogBox.jpg"></div> 
+                <p>Sometimes, an injury will require a wheelchair. In other instances, it may be that balance, stability, and stamina just aren’t what they used to be and you need assistance to get around. Either way, wheelchairs shouldn’t be considered as a negative, they should be looked at as an opportunity to continue your life and allow you to stay independent for longer. </p>
+                <p>
+                    <h5>Advantages</h5>
+                    As we get older, we just naturally get more unsteady on our feet. We are slower than we once were, our muscles and joints are weaker and unfortunately, that makes us more prone to falls. Much needed medication can also play a role in our balance and stability.
+                    
+                    The main advantage of a wheelchair is it keeps you mobile. If an injury or chronic health condition keeps you from being as active as you once where, a wheelchair is a good way to regain much of your mobility. <br> <br>
+                     
+                    There are two types of wheelchairs – manual and power. Manual wheelchairs are either self-propelled or companion propelled – meaning that either you will have to use your own body strength to move the chair or a loved one will have to push you. Power or electric wheelchairs run on a motor and two batteries and are controlled, most often, through the use of a joystick of some sort.</p>
+            </div>
+            <div class="comments">
+                <h5>Add Comments</h5>
+                <form>
+                    <label>Email <span>*</span></label>
+                    <input type="email">
+                    <label>Password <span>*</span></label>
+                    <input type="password">
+                    <label>Your Comment <span>*</span></label>
+                    <textarea id="the-text" rows="8" cols="80" maxlength="100"></textarea>
+                    <span id="the-count">100</span>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <footer>
+            <div class="container">
+                <span>Copyright &copy; 2021 Lama Hmood Inc.</span>
+                <ul>
+                    <li><i class="fab fa-facebook-square fa-2x"></i></li>
+                    <li><i class="fab fa-google-plus-square fa-2x"></i></li>
+                    <li><i class="fab fa-linkedin fa-2x"></i></li>
+                    <li><i class="fab fa-twitter-square fa-2x"></i></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            var $count = document.getElementById('the-count'),
+                $textarea = document.getElementById('the-text'),
+                $maxLength = $textarea.getAttribute('maxlength');
+
+            $textarea.oninput = function() {
+                $count.innerHTML = $maxLength - this.value.length;
+                if($count.innerHTML == 0) {
+                    $count.classList.add('zero-count');
+                } else {
+                    $count.classList.remove('zero-count');
+                }
+            };
+        </script>
+    </body>
+</html>

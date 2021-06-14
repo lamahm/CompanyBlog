@@ -1,0 +1,90 @@
+.blog-box {
+    border: 1px solid rgb(218, 218, 218); 
+    border-radius: 20px; 
+    padding: 20px;
+    margin-bottom: 20px; 
+    overflow: hidden;
+    width: 60%;
+    float: left;
+    margin-right: 3%;
+}
+
+.blog-box .image {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.blog-box p {
+    text-align: justify;
+}
+
+.comments {
+    border: 1px solid rgb(218, 218, 218); 
+    border-radius: 20px; 
+    padding: 20px;
+    width: 30%;
+    float: left;
+    margin-bottom: 20px; 
+    overflow: hidden;
+}
+
+h5 {
+    position: relative;
+    width: max-content;
+    margin-bottom: 20px;
+}
+
+h5::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    border-radius: 7px;
+    bottom: -9px;
+    background-color: #dac9bf;
+}
+
+.comments form label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.comments form label span { 
+    color: rgb(226, 0, 0);
+}
+
+.comments form input, .comments form textarea {
+    color: #878b99;
+    padding: 10px;
+    border: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.comments form textarea {
+    height: 150px;
+    margin-bottom: 0;
+}
+
+.comments form > span:last-of-type {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.zero-count {
+    color:rgb(226, 0, 0);
+    font-weight: bold;
+}
+
+.comments form input[type="submit"] {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #dac9bf;
+    padding: 10px 20px;
+    color: #FFF;
+    cursor: pointer;
+    border: 1px solid rgb(218, 218, 218);
+}
